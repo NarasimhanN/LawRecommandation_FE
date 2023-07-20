@@ -1,0 +1,43 @@
+/* Table.css */
+
+.table-container {
+  width: 300px; /* Adjust the width as needed */
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+.header-row {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.even-row {
+  background-color: #f2f2f2;
+}
+
+.odd-row {
+  background-color: #e6e6e6;
+}
+
+/* Optional: Add some additional styles to make it more beautiful */
+.table-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  text-align: left;
+}
+
+/* Adjust the styles according to your design preferences */

@@ -1,0 +1,53 @@
+.icons-container {
+  position: absolute; /* fixed and absolute have same values*/
+  top: 20px; /* Adjust the top position as needed */
+  right: 40px; /* Adjust the right position as needed */
+  display: flex;
+  align-items: center; /* Align icons vertically if they have different heights */
+}
+
+.icon {
+  width: 30px; /* Adjust the width and height as needed */
+  height: 30px;
+  margin-left: 20px; /* Add some spacing between the icons */
+  color: rgba(96, 154, 156, 0.938);
+}
+.icon:hover {
+  color: rgba(3, 104, 107, 0.938);
+}
+/* Styles for the tooltip */
+.icon:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.icon:hover::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.icon:hover::after,
+.icon:hover::before {
+  visibility: visible;
+  opacity: 1;
+}

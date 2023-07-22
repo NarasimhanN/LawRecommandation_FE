@@ -1,0 +1,35 @@
+/* ImageInfo.css */
+
+.image-info-container {
+  text-align: center;
+  margin: 20px;
+  color: wheat;
+}
+
+.image {
+  width: 200px; /* Adjust the image size as needed */
+  height: 200px;
+  object-fit: cover; /* Ensure the image maintains its aspect ratio and covers the container */
+  border-radius: 50%; /* Rounded border for a circular image (if applicable) */
+}
+
+.image-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.source-url {
+  color: #555;
+  font-size: 14px;
+}
+.link-style {
+  color: wheat;
+}
+.linkedin-icon {
+  margin-left: 10px;
+  color: rgb(120, 200, 224);
+}
+.linkedin-icon:hover {
+  color: rgb(1, 167, 218);
+}

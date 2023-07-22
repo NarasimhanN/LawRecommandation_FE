@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./HomePage.css"; // Import the CSS file for styling
 import CaseTable from "./Table";
-import Summaries from "./Summaries";
+import Summaries from "../Components/Summaries";
 import HeaderAndText from "../Components/HeaderAndText";
 import lawImage from "../Images/law.jpg";
+import TopIcons from "../Components/TopIcons";
 const HomePage = () => {
   const [searchText, setSearchText] = useState("");
   const [listOfCases, setListOfCases] = useState([]);
@@ -56,6 +57,7 @@ const HomePage = () => {
   return (
     <>
       <div className="home-container ">
+        <TopIcons />
         <h1 className="title">Law Recommendation System</h1>
         <h4>
           The system aims to provide you verdicts of past cases similar to your

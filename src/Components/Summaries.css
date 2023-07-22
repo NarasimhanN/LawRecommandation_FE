@@ -25,12 +25,5 @@
 .summary-content {
   padding: 10px;
 }
-.header-container {
-  display: flex;
-  align-items: center;
-  margin-left: 100px;
-}
-.header-container h4 {
-  margin-right: 10px;
-}
+
 /* Adjust the styles according to your design preferences */

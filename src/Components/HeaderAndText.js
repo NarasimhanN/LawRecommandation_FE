@@ -1,5 +1,5 @@
 import React from "react";
-import "../screens/Summaries.css";
+import "./HeaderAndText.css";
 const HeaderAndText = ({ data }) => {
   return (
     <div className="header-container">
